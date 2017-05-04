@@ -1,0 +1,9 @@
+function display(M)
+%KronProd display method
+
+disp(' ');
+disp([inputname(1) ' = ']);
+disp(' ');
+%display(struct(M));
+disp(M)
+disp(' ');

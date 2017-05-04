@@ -1,0 +1,39 @@
+This is a brief guide to installing and getting acquainted with the @KronProd
+class package.
+
+
+INSTALLATION:
+
+1. The @KronProd/ directory and other contents of the @KronProd.zip package should be 
+unpacked into ainto a parent directory that is on the MATLAB path. The contents of the 
+@KronProd/ directory itself, however, should not be put on the path 
+(see MATLAB O.O.P. documentation).
+
+2. Run krontest.m a few times. It tests various capabilities of the class and should
+report a small maximum percent error, typically less than 1e-6.
+For those with earlier versions of MATLAB, krontestR2006a.m is an alternative compatible
+with version R2006a, but with fewer tests reflecting the fewer capabilities of this 
+version.
+
+
+
+RECOMMENDED READING (in the following order).
+
+1. Read "help KronProd/KronProd" - it summarizes the properties of the class and the 
+construction of KronProd objects.
+
+2. Read "help KronProd/full" and "help KronProd/sparse". It describes how to convert  
+KronProd objects to the equivalent numeric matrices that they represent,  
+respectively in full or sparse form. This is useful for comparing 
+operations with KronProd objects with equivalent matrix operations.
+
+3. Read "help KronProd/mtimes". It describes among other things how to perform separable
+tensorial transformations on an array. This is probably the most common application of 
+Kronecker product manipulation.
+
+4. Browse the code of krontest.m (or krontest2006a.m as appropriate). It runs many tests
+of many different KronProd methods, and is a good illustration of the range of operations
+available to the class.
+
+
+
